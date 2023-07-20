@@ -1,0 +1,30 @@
+<!-- !입력후 Tap키를 누르면 html 구조가 자동으로 입력   -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- div#app ==> <div id="app"> </div>-->
+    <!-- div.app ==> <div class="app"> </div> -->
+    <!-- #은 id를 표현 .은 class를 표현하고 그 뒤에 변수명을 입력해주면 아래와 같이 바로 태그가 입력이 된다. -->
+    <div id="app">
+        <!-- hello vue -->
+    </div>
+   
+
+    <!-- script입력 후 Tap키를 누르면 스크립트 태그 자동 입력 -->
+    <script>
+        var div = document.querySelector('#app');
+        console.log(div.id);
+        console.log(div.className);
+
+        var str = 'hello worlk';
+        div.innerHTML = str;
+
+        str = 'hello world!!!';
+    </script>
+</body>
+</html>
